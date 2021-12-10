@@ -40,8 +40,8 @@ public class Person {
 		return company;
 	}
 
-	public void setCompan(String compan) {
-		this.company = compan;
+	public void setCompan(String company) {
+		this.company = company;
 	}
 
 	// 메소드 일반
@@ -50,9 +50,17 @@ public class Person {
 		return "Person [name=" + name + ", ph=" + ph + ", compan=" + company + "]";
 	}
 	
-	public String showinfo() {
-		return "이름: " + name + ", 핸드폰: " + ph + ", 회사: " + company ;
-		
+	//화면출력
+	public void showinfo() {
+		System.out.println("이름:"+name);
+		System.out.println("핸드폰:"+ph);
+		System.out.println("회사:"+company);
+		System.out.println("");
+	}
+	
+	//파일출력
+	public String filedraw() {
+		return name+","+ph+","+company;
 	}
 	
 }
