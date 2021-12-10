@@ -63,9 +63,9 @@ public class PersonApp {
 		// 8. 객체 생성 후 리스트에 추가 담기
 		Person person02 = new Person(name, ph, company);
 		pList.add(person02);
-		
-		//화면 출력 showinfo
-		for(int i = 0; i<pList.size(); i++) {
+
+		// 화면 출력 showinfo
+		for (int i = 0; i < pList.size(); i++) {
 			pList.get(i).showinfo();
 		}
 
@@ -73,8 +73,8 @@ public class PersonApp {
 		Writer w = new FileWriter("C:\\javaStudy\\file\\phoneDB.txt");
 		BufferedWriter bw = new BufferedWriter(w);
 
-		//파일로 내보내기 filedraw
-		//10. 리스트를 출력(리스트에 내용이 담겨져있기 때문에)!!! 하나씩 출력
+		// 파일로 내보내기 filedraw
+		// 10. 리스트를 출력(리스트에 내용이 담겨져있기 때문에)!!! 하나씩 출력
 		for (int i = 0; i < pList.size(); i++) {
 			bw.write(pList.get(i).filedraw());
 			bw.newLine();
